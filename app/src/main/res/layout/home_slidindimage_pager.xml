@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:compactsrc="http://schemas.android.com/tools"
+    android:id="@+id/llMainViewPager"
+    android:layout_width="175dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/image_bg_shap"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <com.example.gameapplication.userApp.utlis.SegoeUIBold
+        android:id="@+id/tvSessionId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Session Id :1"
+        android:textColor="@color/text_black" />
+
+    <com.example.gameapplication.userApp.utlis.SegoeUIBold
+        android:id="@+id/tvValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="5"
+        android:textColor="@color/text_black"
+        android:textSize="90sp" />
+
+    <com.example.gameapplication.userApp.utlis.SegoeUI
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:gravity="center"
+        android:text="Bengo !"
+        android:textColor="@color/text_black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <com.example.gameapplication.userApp.utlis.SegoeUI
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="User Id :cds 45461"
+        android:textColor="@color/text_black"
+        android:textStyle="bold" />
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:id="@+id/llHeader"
+            android:layout_width="160dp"
+            android:layout_height="148dp"
+            android:gravity="center"
+            android:background="@drawable/shap_rounded"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <com.example.gameapplication.userApp.utlis.SegoeUIBold
+                android:id="@+id/tvBattingClose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:visibility="gone"
+                android:textColor="@color/text_header_color"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.gameapplication.userApp.utlis.SegoeUiBoldItalic
+                    android:id="@+id/tvAm_Pm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/tvTime"
+                    android:text="pm"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.example.gameapplication.userApp.utlis.SegoeUIBold
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginRight="2dp"
+                    android:maxLines="1"
+                    android:paddingTop="10dp"
+                    android:text="01:30"
+                    android:textSize="45sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <com.example.gameapplication.userApp.utlis.SegoeUIBold
+                android:id="@+id/tvLeftTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Left Time : 52min"
+                android:textColor="#138d00"
+                android:maxLines="1"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
+
+</LinearLayout>

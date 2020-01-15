@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    app:cardUseCompatPadding="true"
+    android:orientation="vertical"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:id="@+id/llHeader"
+        android:layout_width="132dp"
+        android:layout_height="138dp"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <com.example.gameapplication.userApp.utlis.SegoeUIBold
+            android:id="@+id/tvChipsValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center|top"
+            android:maxLines="1"
+            android:rotation="-45"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.example.gameapplication.userApp.utlis.SegoeUIBold
+            android:id="@+id/tvChipsNumber"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="02"
+            android:textSize="55sp"
+            android:textColor="@color/text_black"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="15dp"
+                android:layout_weight="0.2"
+                android:src="@drawable/calendra" />
+
+            <com.example.gameapplication.userApp.utlis.SegoeUIBold
+                android:id="@+id/tvChipsDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTime"
+                android:gravity="center|left"
+                android:layout_weight="0.7"
+                android:maxLines="1"
+                android:textColor="@color/text_black"
+                android:text=""
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="1"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="15dp"
+                android:src="@drawable/time"
+                android:layout_gravity="right"
+                android:layout_weight="0.2"/>
+
+            <com.example.gameapplication.userApp.utlis.SegoeUIBold
+                android:id="@+id/tvChipsTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTime"
+                android:layout_weight="0.7"
+                android:gravity="center|left"
+                android:maxLines="1"
+                android:textColor="@color/text_black"
+                android:text=""
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <com.example.gameapplication.userApp.utlis.SegoeUIBold
+            android:id="@+id/tvBettingId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:background="@color/text_black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

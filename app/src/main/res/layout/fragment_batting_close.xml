@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <include layout="@layout/footer" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llHeader"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@color/header_color"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.example.gameapplication.userApp.utlis.SegoeUIBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Betting Close Soon"
+                    android:textColor="@color/text_header_color"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.example.gameapplication.userApp.utlis.SegoeUiBoldItalic
+                        android:id="@+id/tvAmPm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/tvTime"
+                        android:text="pm"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <com.example.gameapplication.userApp.utlis.SegoeUIBold
+                        android:id="@+id/tvTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="2dp"
+                        android:paddingTop="15dp"
+                        android:text="01:30"
+                        android:textColor="@color/white"
+                        android:textSize="45sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <com.example.gameapplication.userApp.utlis.SegoeUIBold
+                    android:id="@+id/tvLeftTimeClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Left Time : 52min"
+                    android:textColor="@color/lefttext"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/llHeader"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rlEnterValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/bg_shap_round">
+
+                    <EditText
+                        android:id="@+id/etEnterValueData"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:background="@null"
+                        android:hint="Enter Chips"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:textSize="25sp" />
+
+                    <EditText
+                        android:id="@+id/etEnterValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:background="@null"
+                        android:hint=""
+                        android:paddingLeft="10dp"
+                        android:textSize="25sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlmainLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlEnterValue"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/llMain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical">
+
+
+                        <com.example.gameapplication.userApp.utlis.SegoeUIBold
+                            android:id="@+id/tvOneValue"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/etEnterValue"
+                            android:background="@drawable/bg_shap_round"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/text_black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <com.example.gameapplication.userApp.utlis.SegoeUIBold
+                            android:id="@+id/tvFourValue"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/bg_shap_round"
+                            android:gravity="center"
+                            android:text="4"
+                            android:textColor="@color/text_black"
+                            android:textSize="25sp"
+
+                            android:textStyle="bold" />
+
+                        <com.example.gameapplication.userApp.utlis.SegoeUIBold
+                            android:id="@+id/tvSevenValue"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/etEnterValue"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/bg_shap_round"
+                            android:gravity="center"
+                            android:text="7"
+                            android:textColor="@color/text_black"
+
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llSecondRow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <com.example.gameapplication.userApp.utlis.SegoeUIBold
+                            android:id="@+id/tvTwoValue"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/etEnterValue"
+                            android:background="@drawable/bg_shap_round"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textColor="@color/text_black"
+
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <com.example.gameapplication.userApp.utlis.SegoeUIBold
+                            android:id="@+id/tvFiveValue"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/bg_shap_round"
+                            android:gravity="center"
+                            android:text="5"
+                            android:textColor="@color/text_black"
+
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <com.example.gameapplication.userApp.utlis.SegoeUIBold
+                            android:id="@+id/tvEightValue"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/etEnterValue"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/bg_shap_round"
+                            android:gravity="center"
+                            android:text="8"
+                            android:textColor="@color/text_black"
+
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <com.example.gameapplication.userApp.utlis.SegoeUIBold
+                            android:id="@+id/tvZeroValue"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/bg_shap_round"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/text_black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llThridRow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="15dp"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+
+                        <com.example.gameapplication.userApp.utlis.SegoeUIBold
+                            android:id="@+id/tvThreeValue"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/etEnterValue"
+                            android:background="@drawable/bg_shap_round"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="@color/text_black"
+                            android:textSize="25sp"
+
+                            android:textStyle="bold" />
+
+                        <com.example.gameapplication.userApp.utlis.SegoeUIBold
+                            android:id="@+id/tvSixValue"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/bg_shap_round"
+                            android:gravity="center"
+                            android:text="6"
+                            android:textColor="@color/text_black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <com.example.gameapplication.userApp.utlis.SegoeUIBold
+                            android:id="@+id/tvNineValue"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/etEnterValue"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/bg_shap_round"
+                            android:gravity="center"
+                            android:text="9"
+                            android:textColor="@color/text_black"
+
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

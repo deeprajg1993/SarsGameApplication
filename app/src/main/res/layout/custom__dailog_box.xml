@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey200"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:rotation="180"
+            android:src="@drawable/dashboard_icon" />
+
+        <ImageView
+            android:id="@+id/ivCancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:padding="10dp"
+            android:src="@drawable/ic_black" />
+    </RelativeLayout>
+
+    <com.example.gameapplication.userApp.utlis.SegoeUIBold
+        android:id="@+id/tvUserName"
+        style="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="User Name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="35sp" />
+
+    <com.example.gameapplication.userApp.utlis.SegoeUIBold
+        android:id="@+id/tvAviablePoint"
+        style="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Avial Balance (300)"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dialog_text_input_layout"
+            style="@style/Widget.AppTheme.TextInputLayoutList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Add Chips"
+            app:boxStrokeColor="@color/colorPrimary"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_AddChips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="8dp"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tvDebitSubmit"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="1dp"
+            android:layout_weight="0.49"
+            android:background="#ff4d00"
+            android:gravity="center"
+            android:text="Debit"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvAddSubmit"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="0.51"
+            android:background="#00a241"
+
+            android:gravity="center"
+            android:text="Add"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>
